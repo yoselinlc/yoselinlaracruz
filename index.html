@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alumnos inscritos</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+<div class="container">
+    <h1>Alumnos inscritos</h1>
+    <form>
+        <div class="form-group">
+            <label for="no_cuenta">
+                No. Cuenta:
+            </label>
+            <input type="number" id="no_cuenta" name="no_cuenta" class="form-control" 
+                    placeholder="Escribe tu número de cuenta">
+        </div>
+        
+        <div class="form-group">
+            <label for="nombre">
+                Nombre:
+            </label>
+            <input type="text" id="nombre" name="nombre" class="form-control" 
+                    placeholder="Escribe tu nombre completo">
+        </div> 
+
+        <div class="form-group">
+            <label for="carrera">
+                Carrera:
+            </label> 
+            <select class="form-control" name="carrera" id="carrera">
+                <option value="Ingeniería Informática">Ingeniería Informática</option>
+                <option value="Contaduría">Contaduría</option>
+                <option value="Ingeniería Civil">Ingeniería Civil</option>
+            </select>
+        </div>
+
+        <!--Promedio-->
+        <div class="form-group">
+            <label for="promedio">
+                Promedio:
+            </label>
+            <input type="number" id="promedio" name="promedio" class="form-control"
+                    placeholder="Escribe tu promedio">
+        </div>
+
+        <!--Botones-->
+        <div class="form-group">
+            <input type="submit" value="Guardar" id="btn_guardar" class="btn btn-primary">
+        </div>
+    </form>
+
+    <div class="card">
+        <div class="card-body" id="salida">
+            <table id="tabla_alumnos" class="table table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th>Fotografía</th>
+                        <th>No. Cuenta</th>
+                        <th>Nombre</th>
+                        <th>Carrera</th>
+                        <th>Promedio</th>
+                </tr>
+                </thead>    
+                <tbody>
+
+                </tbody> 
+            </table>   
+        </div>
+    </div>
+</div>
+<script src="js/alumnos_inscritos.js"></script>
+</body>
+
+</html>
